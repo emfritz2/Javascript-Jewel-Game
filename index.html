@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Crystal Game</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="header">
+		<h1>CRYSTAL COLLECTOR</h1>
+	</div>
+
+	<section>
+	<div class="instructions">
+		<h2>HOW TO PLAY</h2>
+		<p>Click on the jewels and try to reach the random number displayed.
+		<br>The value is hidden until you click on each jewel.
+		<br>Each time you restart the game, their values will change. </p>
+  	</div>
+   	</section>
+
+
+   	<section>
+   		<div class="row">
+   		<div class="topBar">
+		  <div class="col-sm-6"><h3>Number to Get: </h3> </div>
+		  <div class="col-sm-6"><h3>Total Score: </h3></div>
+		 </div>
+		</div>
+   	</section>
+
+	<section>
+      	<!-- <div class="gems"> -->
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-md-3 col-sm-3 col-xs-6">
+			        <img src="assets/images/circle.png" class=crystalImage id="one" alt="Circle Gem"></div>
+			    <div class="col-md-3 col-sm-3 col-xs-6">
+					<img src="assets/images/hexagon.png" class=crystalImage id="two" alt="Hexagon Gem"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<img src="assets/images/diamond.png" class=crystalImage id= "three" alt="Diamond Gem"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6">
+					<img src="assets/images/square.png" class=crystalImage id= "four" alt="Square Gem"></div>
+			</div>
+      	</div>
+      	</div>
+    </section>
+
+<section>
+   		<div class="row">
+   		<div class="bottomBar">
+		  <div class="col-sm-6"><h3>Wins: </h3> </div>
+		  <div class="col-sm-6"><h3>Losses: </h3></div>
+		 </div>
+		</div>
+   	</section>
+
+
+    <footer>
+    </footer>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
