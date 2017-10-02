@@ -33,10 +33,14 @@
 
    	<section>
    		<div class="row">
-   		<div class="topBar">
-		  <div class="col-sm-6"><h3>Number to Get: </h3> </div>
-		  <div class="col-sm-6"><h3>Total Score: </h3></div>
-		 </div>
+   			<div class="topBar">
+				  <div class="col-sm-6">
+				  	<h3>Number to Get: 
+				  		<span id= "numberToGet"></span></h3> </div>
+
+				  <div class="col-sm-6">
+				  	<h3>Total Score: <span id= "totalScore"></span></h3></div>
+		 	</div>
 		</div>
    	</section>
 
@@ -45,13 +49,13 @@
       	<div class="container">
       		<div class="row">
       			<div class="col-md-3 col-sm-3 col-xs-6">
-			        <img src="assets/images/circle.png" class=crystalImage id="one" alt="Circle Gem"></div>
+			        <img src="assets/images/circle.png" class=crystalImage id="circle" alt="Circle Gem"></div>
 			    <div class="col-md-3 col-sm-3 col-xs-6">
-					<img src="assets/images/hexagon.png" class=crystalImage id="two" alt="Hexagon Gem"></div>
+					<img src="assets/images/hexagon.png" class=crystalImage id="hex" alt="Hexagon Gem"></div>
 				<div class="col-md-3 col-sm-3 col-xs-6">
-					<img src="assets/images/diamond.png" class=crystalImage id= "three" alt="Diamond Gem"></div>
+					<img src="assets/images/diamond.png" class=crystalImage id= "diamond" alt="Diamond Gem"></div>
 				<div class="col-md-3 col-sm-3 col-xs-6">
-					<img src="assets/images/square.png" class=crystalImage id= "four" alt="Square Gem"></div>
+					<img src="assets/images/square.png" class=crystalImage id= "square" alt="Square Gem"></div>
 			</div>
       	</div>
       	</div>
@@ -60,8 +64,12 @@
 <section>
    		<div class="row">
    		<div class="bottomBar">
-		  <div class="col-sm-6"><h3>Wins: </h3> </div>
-		  <div class="col-sm-6"><h3>Losses: </h3></div>
+		  <div class="col-sm-6">
+		  	<h3>Wins: <span id= "wins"></span></h3>
+		  </div>
+		  <div class="col-sm-6">
+		  	<h3>Losses: <span id= "losses"></span></h3>
+		  </div>
 		 </div>
 		</div>
    	</section>
@@ -70,9 +78,9 @@
     <footer>
     </footer>
 
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
