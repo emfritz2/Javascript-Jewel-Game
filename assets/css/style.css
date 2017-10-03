@@ -1,5 +1,5 @@
 body {
-	background-color: #007386;
+	background-color: #282828; /*#007386*/
 	margin: auto;
 }
 
@@ -7,7 +7,7 @@ body {
 	margin: auto;
 	font-family: 'Roboto Slab', serif;
 	color: white;
-	background-color: #0ca0af;
+	background-color: #3f3f3f; /*#0ca0af*/
 	padding: 10px;
 	padding-bottom: 20px;
 	text-align: center;
@@ -27,7 +27,7 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	color: white;
 	text-align: center;
-	background-color: #0ca0af;
+	background-color: #3f3f3f; /*#0ca0af*/
 	padding: 20px;
 	padding-left: 35px;
 	text-align: left;

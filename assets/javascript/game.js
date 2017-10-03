@@ -13,7 +13,7 @@ var wins = 0;
 
 var losses = 0;
 
-var totalScore = 0;
+var score = 0;
 
 // display the wins/losses/userscore in html
 
@@ -21,7 +21,7 @@ var totalScore = 0;
 
 	$('#losses').html(losses);
 
-	$('#totalScore').html(totalScore);
+	$('#totalScore').html(score);
 
 
 	// set a random number to each jewel
@@ -41,9 +41,9 @@ var totalScore = 0;
 
 $('#circle').on('click', function(){
 
-	totalScore = totalScore + jewel1;
+	score = score + jewel1;
 
-	$('#totalScore').html(totalScore);
+	$('#totalScore').html(score);
 
 })
 
@@ -51,9 +51,9 @@ $('#circle').on('click', function(){
 
 $('#hex').on('click', function(){
 
-	totalScore = totalScore + jewel2;
+	score = score + jewel2;
 
-	$('#totalScore').html(totalScore);
+	$('#totalScore').html(score);
 
 })
 
@@ -61,34 +61,46 @@ $('#hex').on('click', function(){
 
 $('#diamond').on('click', function(){
 
-	totalScore = totalScore + jewel3;
+	score = score + jewel3;
 
-	$('#totalScore').html(totalScore);
+	$('#totalScore').html(score);
 })
 
 // jewel 4
 
 $('#square').on('click', function(){
 
-	totalScore = totalScore + jewel4;
+	score = score + jewel4;
 
-	$('#totalScore').html(totalScore);
+	$('#totalScore').html(score);
 
 })
 
-	if (totalScore == Random) {
+// adding wins and losses
+
+
+ 
+	if (score == Random) {
+
 		wins++;
+
+		$('#wins').html(wins);
 	}
-	else if (totalScore > Random) {
+	
+	else if (score > Random) {
+
 		losses++;
+
+		$('#losses').html(losses);
 	}
+
 
 
 
 // 50% opacity when the mouse hovers over images
 
   $("img").hover(function() {
-        $(this).animate({opacity: 0.5});
+        $(this).animate({opacity: 0.6});
     }, function() {
         $(this).animate({opacity: 1.0});
     });
