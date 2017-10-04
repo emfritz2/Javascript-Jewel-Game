@@ -35,6 +35,24 @@ var score = 0;
 	var jewel4 = Math.floor((Math.random() * 11) + 1);
 
 
+	function restart() {
+
+	Random=Math.floor(Math.random() * 101+19)
+	
+	$('#numberToGet').html(Random);
+
+	jewel1 = Math.floor((Math.random() * 11) + 1);
+	jewel2 = Math.floor((Math.random() * 11) + 1);
+	jewel3 = Math.floor((Math.random() * 11) + 1);
+	jewel4 = Math.floor((Math.random() * 11) + 1);
+
+		score = 0;
+
+		$('#totalScore').html(score);
+	}
+
+
+
 // when user clicks the gem, the score goes up
 
 // jewel 1
@@ -44,6 +62,25 @@ $('#circle').on('click', function(){
 	score = score + jewel1;
 
 	$('#totalScore').html(score);
+
+	if (score == Random) {
+
+		wins++;
+
+		$('#wins').html(wins);
+
+		restart()
+	}
+	
+	else if (score > Random) {
+
+		losses++;
+
+		$('#losses').html(losses);
+
+		restart()
+	}
+
 
 })
 
@@ -55,6 +92,25 @@ $('#hex').on('click', function(){
 
 	$('#totalScore').html(score);
 
+	if (score == Random) {
+
+		wins++;
+
+		$('#wins').html(wins);
+
+		restart()
+	}
+	
+	else if (score > Random) {
+
+		losses++;
+
+		$('#losses').html(losses);
+
+		restart()
+	}
+
+
 })
 
 // jewel 3
@@ -64,6 +120,25 @@ $('#diamond').on('click', function(){
 	score = score + jewel3;
 
 	$('#totalScore').html(score);
+
+		if (score == Random) {
+
+		wins++;
+
+		$('#wins').html(wins);
+
+		restart()
+	}
+	
+	else if (score > Random) {
+
+		losses++;
+
+		$('#losses').html(losses);
+
+		restart()
+	}
+
 })
 
 // jewel 4
@@ -74,17 +149,13 @@ $('#square').on('click', function(){
 
 	$('#totalScore').html(score);
 
-})
-
-// adding wins and losses
-
-
- 
 	if (score == Random) {
 
 		wins++;
 
 		$('#wins').html(wins);
+
+		restart()
 	}
 	
 	else if (score > Random) {
@@ -92,8 +163,11 @@ $('#square').on('click', function(){
 		losses++;
 
 		$('#losses').html(losses);
+
+		restart()
 	}
 
+})
 
 
 
