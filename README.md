@@ -1,7 +1,8 @@
 # Javascript Jewel Game
 
-Click the jewels to try and reach the displayed number.
-Each time the game restarts, the number associated with each jewel will change.
+Click on the jewels and try to reach the random number displayed. 
+The value is hidden until you click on each jewel. 
+Each time you restart the game, their values will change.
 
 ## Getting Started
 
